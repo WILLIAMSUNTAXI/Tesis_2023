@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Verificar cédula</title>
+</head>
+<body>
+    <h1>Verificar cédula</h1>
+    {% if error %}
+        <p style="color: red">La cédula es inválida</p>
+    {% endif %}
+    <form method="post">
+        <label for="cedula">Ingrese su cédula:</label><br>
+        <input type="text" id="cedula" name="cedula"><br>
+        <input type="submit" value="Verificar">
+    </form>
+</body>
+</html>
+
+
+

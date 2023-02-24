@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: lightgray;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px #333;
+    display: inline-block;
+}
+
+label {
+    font-size: 1.2em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="email"], input[type="password"] {
+    padding: 10px;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: darkblue;
+}
+
+
+
+
+
+

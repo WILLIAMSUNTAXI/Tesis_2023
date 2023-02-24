@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/estilos.css">
+    <title>Document</title>
+</head>
+<body>
+<h1>Formulario de datos</h1>
+<main>
+    {% if error %}
+        <p style="color: red">La cédula es inválida</p>
+    {% endif %}
+    <form class="formulario" method="post">
+        <fieldset class="sombra">
+            <legend>Datos personales</legend>
+            <div>
+                <label for="ci">Número de cédula:</label>
+                <input name="ci" type="text">
+            </div>
+
+            <div>
+                <label for="nombre">Nombres:</label>
+                <input name="nombre" type="text" onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+            <div>
+                <label for="apellido">Apellidos:</label>
+                <input name="apellido" type="text" onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+            <div>
+                <label for="nacionalidad">Nacionalidad:</label>
+                <input name="nacionalidad" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+
+            <div>
+                <label for="estadoCivil">Estado Civil:</label>
+                <select name="estadoCivil">
+                    <option value="SOLTERO" selected>SOLTERO</option>
+                    <option value="CASADO">CASADO</option>
+                    <option value="DIVORCIADO">DIVORCIADO</option>
+                    <option value="UNION LIBRE">UNION LIBRE</option>
+                    <option value="VIUDO">VIUDO</option>
+                </select>
+            </div>
+
+
+            <div>
+                <label for="fechaNacimiento">Fecha nacimiento:</label>
+                <input name="fechaNacimiento" type="date">
+            </div>
+
+            <div>
+                <label for="lugarNacimiento">Lugar de nacimiento:</label>
+                <input name="lugarNacimiento" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+             <div>
+                <label for="codigo_dactilar">Código Dactilar:</label>
+                <input name="codigo_dactilar" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+
+            <div>
+                <label for="ocupacion"> Condición ciudadano:</label>
+                <input name="ocupacion" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+
+
+
+        </fieldset>
+        <br>
+        <br>
+        <fieldset class="sombra">
+            <legend> Datos de contacto</legend>
+
+
+            <div>
+                <label for="correoElectronico">Correo electrónico:</label>
+                <input name="correoElectronico" type="email">
+            </div>
+
+            <div>
+
+                <label for="telefono">Teléfono:</label>
+                <input name="telefono" type="text">
+            </div>
+            <div>
+                <label for="domicilio">Domicilio:</label>
+                <input name="domicilio" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+             <div>
+                <label for="numerocasa">Número de casa:</label>
+                <input name="numerocasa" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+        <div>
+            <label for="direccion">Dirección</label>
+            <input name="direccion" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+        </div>
+
+        </fieldset>
+        <br>
+        <br>
+
+        <fieldset class="sombra">
+            <legend>Datos de Afiliado</legend>
+            <div>
+                <label for="ruc">Ruc Patronal</label>
+                <input name="ruc" type="text">
+            </div>
+            <div>
+                <label for="origen">Origen </label>
+                <input name="origen" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+            <div>
+                    <label for="periodo_desde">Periodo desde:</label>
+                    <input name="periodo_desde" type="date">
+            </div>
+            <div>
+                    <label for="periodo_hasta">Periodo hasta:</label>
+                    <input name="periodo_hasta" type="date">
+            </div>
+
+
+            <div>
+                <label for="imposiciones">Imposiciones</label>
+                <input name="imposiciones" type="text">
+            </div>
+            <div>
+                <label for="dias">Días</label>
+                <input name="dias" type="text">
+            </div>
+            <div>
+                <label for="sector">Sector </label>
+                <input name="sector" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+            <div>
+                <label for="razon_social ">Razón social</label>
+                <input name="razon_social" type="text"  onkeyup="this.value=this.value.toUpperCase()">
+            </div>
+
+            <div>
+                <label for="estadoAfiliado">Estado de afiliado:</label>
+                <select name="estadoAfiliado">
+                    <option value="ACTIVO" selected>ACTIVO</option>
+                    <option value="INACTIVO">INACTIVO</option>
+                    <option value="JUBILADO">JUBILADO</option>
+                </select>
+            </div>
+        </fieldset>
+        <input class="boton" type="submit" value="Enviar">
+    </form>
+</main>
+
+</body>
+</html>

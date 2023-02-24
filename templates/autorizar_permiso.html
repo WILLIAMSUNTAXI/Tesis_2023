@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Aceptar/Denegar solicitud de autorización</title>
+</head>
+<body>
+<h1>Aceptar/Denegar solicitud de autorización</h1>
+<form action="/aceptar_permiso/{{ token }}" method="post">
+    <input type="submit" name="accion" value="Aceptar">
+</form>
+<form action="/denegar_permiso/{{ token }}" method="post">
+    <input type="submit" name="accion" value="Denegar">
+</form>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/notificacion.css">
+    <title>Consentimiento</title>
+</head>
+
+<body>
+
+<h1>Consentimiento de Datos Personales</h1>
+<div class="imagen">
+    <img class="imagen" src="../static/alert.png" alt="imagen de alerta">
+</div>
+
+
+<main class="sombra">
+    <div class="parrafo">
+        <p>El siguiente contrato expondrá los lineamientos para el tratamiento
+        de sus datos que ahora usted, como TITULAR, otrogará o no.
+        El objetivo de este Contrato es informarte sobre qué datos recogemos,
+        por qué los recogemos y cómo puedes actualizarlos, gestionarlos, exportarlos
+        y eliminarlos. Al aceptar este contrato, nos proporcionas información personal
+        que incluyen tus nombres completos y tu número de cédula. También recolectaremos
+        tu número de teléfono, correo electrónico y tu dirección domiciliaria.
+        Recogemos información para proporcionar los mejores
+        servicios a todos nuestros usuarios, a continuación te detallamos
+        los motivos de recogida:</p>
+    </div>
+
+    <div class="lista">
+
+
+        <ul class="lista">
+
+            <li>Tus nombres son el identificador único y serán tratados para fines de reconocimeinto personal.</li>
+            <li>Tu número de cédula nos permite identificar en que ciudad naciste para posteriormente clasificarla por
+                provincias y regiones.
+            </li>
+            <li>Tu número de teléfono será almacenado para comunicarnos contigo y ofrecerte nusetros servicios</li>
+            <li>Tu correo electrónico servirá para enviarte noticias sobre nuetros nuevos servicios y para que te contactes
+                con nosotros de manera directa.
+            </li>
+            <li> Tu dirección domiciliaria servirá para identificar a nuestros clientes por sectores y ofrecerles el mejor
+                servicio según tu ubicación.
+            </li>
+        </ul>
+
+    </div>
+
+    <div class="parrafo">
+    <p>
+        Una vez tu nos otorgues estos datos debes conocer que, bajo solicitud previa
+        a nuestro RESPONSABLE, puedes actualizar tus datos personales si crees que algúna dato está erróneo o creas que debes corregirlos. Asimismo, una vez otorgados tus datos personales, debes conocer que puedes eliminarlos de forma permanente si asi lo consideras conveniente. En este caso, es mandatorio que realices una solicitud hacia nuestro RESPONSABLE encargado explicando tu requerimiento de eliminación de datos. El proceso durará aproximadamente 48 horas laborables. Se te notificará vía e-mail el cumplimiento de tu solicitud. Por otro lado, tus datos otorgados serán tratados durante 3 años a partir del momento en que quedan almacenados en nuestro sistema. Una vez vencidos los 3 años se procederá a eliminar tus datos personales de forma definitiva de nuestro sistema. Se te notificará la eliminación por expiración
+        de los mismos por correo electrónico. Una vez expuesto este
+        contrato, deseamos saber si aceptas este contrato. Por favor escribe tu respuesta:
+    </p>
+    </div >
+    <div class="parrafo">
+
+
+        <p>Si acepta proporcionar su información, presione <strong>"si"</strong> para confirmar.
+            Si desea rechazar, presione <strong>"no"</strong>. Si tiene alguna pregunta o necesita más información
+            sobre cómo utilizamos sus datos, no dude en ponerse en contacto con nosotros.</p>
+
+    </div>
+    <div class="botones" >
+        <input class="boton_acep" type="submit" value="Aceptar" onclick="location.href='{{ url_for('confirmacion') }}'">
+        <input class="boton_cancel" type="submit" value="Cancelar">
+    </div>
+</main>
+</body>
+</html>

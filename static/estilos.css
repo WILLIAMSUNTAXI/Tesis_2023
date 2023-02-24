@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+html{
+    font-size: 80.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+body{
+
+    margin-left: 100px;
+    margin-top: 100px;
+
+}
+
+.sombra{
+    -webkit-box-shadow: 10px 2px 37px -4px rgba(0,0,0,0.14);
+-moz-box-shadow: 10px 2px 37px -4px rgba(0,0,0,0.14);
+box-shadow: 10px 2px 37px -4px rgba(0,0,0,0.14);
+border-radius: 11px 11px 11px 11px;
+-moz-border-radius: 11px 11px 11px 11px;
+-webkit-border-radius: 11px 11px 11px 11px;
+border: 0px solid #000000;
+}
+main{
+
+    padding: 20px;
+    justify-content: start;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+h1{
+    text-align: center;
+    color: green;
+}
+.formulario legend {
+    font-size: 1.5rem;
+    color: #4a0e80;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.formulario label {
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    margin: 1rem;
+
+}
+.formulario input[type="text"], textarea, Select, email{
+    padding: 0.5rem ;
+    display: block;
+    width: 99%;
+    background-color:#f5f5f5;
+    border: 1px solid #c3cc7a;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem;
+}
+.formulario input[type="email"], textarea, Select{
+    padding: 0.5rem ;
+    display: block;
+    width: 99%;
+    background-color:#f5f5f5;
+    border: 1px solid #c3cc7a;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem;
+}
+.formulario input[type="date"], textarea, Select{
+    padding: 0.5rem ;
+    display: block;
+    width: 20%;
+    background-color:#f5f5f5;
+    border: 1px solid #c3cc7a;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0.5rem;
+}
+
+
+.formulario input[type= "checkbox"]{
+    margin: 0;
+    width: auto;
+}
+.formulario textarea{
+
+    height: 15rem;
+}
+
+
+
+
+
+fieldset{
+    justify-content: center;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+.form_consulta{
+    width: 100%;
+    white-space: break-spaces;
+    height: 100%;
+}
+.container{
+    margin: 150px auto;
+    width: 100%;
+    padding-top: 0px;
+}
+table{
+
+    background-color: whitesmoke;
+    text-align: center;
+    border-collapse: collapse;
+    width: 50%;
+    margin-top: 0;
+}
+th, td {
+    border-color: #007bff;
+    padding: 1px;
+    width: auto;
+    margin-left: 2rem
+
+
+}
+thead {
+    background-color: #4a0e80;
+    border-bottom: solid 5px white;
+    color: white;
+}
+tr:nth-child(even){
+    background-color: white;
+
+}
+tr:hover td{
+    background-color: #f9f8d2;
+    color: gray;
+
+
+}
+
+
+
+
